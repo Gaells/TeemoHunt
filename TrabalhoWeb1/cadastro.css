@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to right, #e2e2e2, #6484ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#container {
+    width: 600px;
+    height: 500px;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formStyle input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.formStyle label{
+    width: 300px;
+    height: 30px;
+
+}
+
+.logar {
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(45, 45, 160);
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    text-decoration: none;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .btn.animated-button.thar-three {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid rgb(25, 25, 136);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  .btn.animated-button.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: none; /* Correção: corrigindo o valor 'nthree' */
+    text-decoration: none;
+  }
+  
+  .btn.animated-button.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .btn.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: linear-gradient(to right, #e2e2e2, #6484ec);
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    text-decoration: none;
+  }
